@@ -1,0 +1,280 @@
+.lrbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 600px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.login {
+  width: 250px;
+  height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #0d6efd;
+  color: white;
+  transition: 0.3s;
+  border-radius: 20px;
+  border: none;
+  caret-color: transparent;
+  outline: none; /* Also removes the default blue ring on some browsers */
+  user-select: none;
+}
+.login:hover {
+  background-color: #0a58ca; /* Darker blue on hover */
+}
+.register {
+  width: 250px;
+  height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #e9ecef;
+  color: #212529;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  border: none;
+  caret-color: transparent;
+  outline: none; /* Also removes the default blue ring on some browsers */
+  user-select: none;
+}
+.register:hover {
+  background-color: #dee2e6;
+}
+.managebtn {
+  width: 250px;
+  height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #e9ecef;
+  color: #212529;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  border: none;
+  caret-color: transparent;
+  outline: none; /* Also removes the default blue ring on some browsers */
+  user-select: none;
+}
+.managebtn:hover {
+  background-color: #dee2e6;
+}
+/* The Main Vertical Column */
+.user-vertical-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+
+  /* Modern Professional Shadow */
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05),
+    0 1px 4px rgba(0, 0, 0, 0.02);
+
+  width: 500px;
+  max-height: 700px; /* Better than fixed height */
+  overflow-y: auto; /* Adds a scrollbar if the list is long */
+
+  padding: 40px 20px;
+  gap: 15px; /* Slightly more breathing room */
+  border-radius: 16px; /* Smoother corners */
+  border: 1px solid #f1f3f5; /* Subtle border to define the edge on white */
+}
+/* Custom Scrollbar for the stack */
+.user-vertical-stack::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-vertical-stack::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.user-vertical-stack::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 10px;
+}
+
+.user-vertical-stack::-webkit-scrollbar-thumb:hover {
+  background: #4a6fa5;
+}
+
+.user-vertical-stack h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #2c3e50; /* Deep Navy Slate */
+  font-size: 24px; /* Slightly smaller is more modern */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  border-bottom: 2px solid #f1f3f5;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Individual User Card */
+.user-row-card {
+  display: flex;
+  justify-content: space-between; /* Pushes name to left, buttons to right */
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border: 1px solid #f1f3f5;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02); /* Soft professional lift */
+}
+
+.user-row-card:hover {
+  transform: translateY(-3px); /* The Lift */
+  box-shadow: 0 8px 15px rgba(74, 111, 165, 0.1); /* Slate blue tint shadow */
+  border-color: #4a6fa5;
+}
+
+/* The Name Style */
+.user-display-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+/* Horizontal Gap for Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Pushes buttons to the right */
+}
+.back-link {
+  /* Positioning */
+  align-self: flex-start; /* Keeps it to the left if inside your vertical stack */
+  margin-bottom: 10px;
+
+  /* Reset defaults */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  /* Typography & Color */
+  color: #868e96; /* Modern muted gray */
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #4a6fa5; /* Turns to your professional Slate Blue */
+  transform: translateX(-5px); /* Subtle slide to the left */
+}
+.managebtn-small {
+  width: 85px;
+  height: 35px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  caret-color: transparent;
+  outline: none; /* Also removes the default blue ring on some browsers */
+  user-select: none;
+  /* Style: Subtle Ghost */
+  background-color: #f8f9fa;
+  color: #4a6fa5;
+  border: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.managebtn-small:hover {
+  /* Style: Solid Slate Lift */
+  background-color: #4a6fa5;
+  color: #ffffff;
+  border-color: #4a6fa5;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(74, 111, 165, 0.2);
+}
+
+.removebtn {
+  width: 85px; /* Same width as Edit for symmetry */
+  height: 35px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  caret-color: transparent;
+  outline: none; /* Also removes the default blue ring on some browsers */
+  user-select: none;
+  /* Style: Subtle Red Ghost */
+  background-color: #fff5f5;
+  color: #e03131;
+  border: 1px solid #ffe3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.removebtn:hover {
+  /* Style: Solid Danger Lift */
+  background-color: #fa5252;
+  color: #ffffff;
+  border-color: #fa5252;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(250, 82, 82, 0.2);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 600px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.form h1 {
+  margin-bottom: 20px;
+  color: #212529;
+  font-size: 28px;
+}
+.name,
+.email,
+.password {
+  width: 300px;
+  height: 45px;
+  padding: 0 15px;
+  margin-bottom: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.name:focus,
+.email:focus,
+.password:focus {
+  border-color: #0d6efd; /* Changes to Blue */
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15); /* Soft blue glow */
+}
+.sign-in,
+.sign-up {
+  width: 300px;
+  height: 48px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s;
+}
